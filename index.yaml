@@ -27,6 +27,6 @@ entries:
     sources:
     - https://github.com/HaroldSota/nginx-ingress
     urls:
-    - https://github.com/HaroldSota/nginx-ingress/ingress-nginx-4.7.0.tgz
+    - blob:https://github.com/13769a24-f200-4fce-a047-bc315bf090fc
     version: 4.7.0
 generated: "2023-05-30T18:41:21.836203542Z"
