@@ -202,7 +202,9 @@ controller:
   ## Node labels for controller pod assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: {
+    beta.kubernetes.io/os: linux 
+  }
 
   ## Liveness and readiness probe values
   ## Ref: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes
@@ -266,9 +268,9 @@ controller:
     ## List of IP addresses at which the controller services are available
     ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
     ##
-    externalIPs: []
+    externalIPs: [51.138.111.98]
 
-    loadBalancerIP: ""
+    loadBalancerIP: "51.138.111.98"
     loadBalancerSourceRanges: []
 
     enableHttp: true
@@ -527,7 +529,9 @@ defaultBackend:
   ## Node labels for default backend pod assignment
   ## Ref: https://kubernetes.io/docs/user-guide/node-selection/
   ##
-  nodeSelector: {}
+  nodeSelector: {
+    beta.kubernetes.io/os: linux
+  }
 
   ## Annotations to be added to default backend pods
   ##
